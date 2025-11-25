@@ -1,0 +1,44 @@
+:root{
+    --bg:#0b0b0b;
+    --card:#121212;
+    --accent:#b33a2b; /* blood-like tone suiting Eren */
+    --muted:#9a9a9a;
+    --glass: rgba(255,255,255,0.03);
+}
+
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background:linear-gradient(180deg,#070707 0%, #0f0f0f 100%);color:#eee;line-height:1.6}
+
+
+.hero{padding:48px 18px;background-image:linear-gradient(90deg, rgba(179,58,43,0.06), transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
+.hero-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:28px}
+.hero-text{flex:1}
+.hero-text h1{font-size:44px;letter-spacing:1px;margin-bottom:6px}
+.hero-text h2{font-size:18px;color:var(--muted);margin-bottom:12px}
+.tag{color:var(--muted);max-width:60%}
+.actions{margin-top:16px;display:flex;gap:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;box-shadow:0 8px 20px rgba(179,58,43,0.12)}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);box-shadow:none}
+
+
+.hero-media{width:260px;display:flex;justify-content:center}
+.portrait{width:220px;height:auto;border-radius:10px;object-fit:cover;border:2px solid rgba(255,255,255,0.04);filter:drop-shadow(0 20px 40px rgba(0,0,0,0.6))}
+
+
+main{max-width:900px;margin:28px auto;padding:0 18px}
+.card{background:var(--card);padding:20px;border-radius:14px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.02)}
+.card h3{margin-bottom:12px;color:#fff}
+.card p, .card li{color: #dcdcdc}
+.card ul{list-style:disc;margin-left:18px}
+.stats ol{margin-left:18px}
+
+
+.footer{max-width:900px;margin:10px auto;padding:12px 18px;color:var(--muted);font-size:14px}
+
+
+@media(max-width:800px){
+    .hero-inner{flex-direction:column;align-items:flex-start}
+    .hero-media{width:100%}
+    .tag{max-width:100%}
+}
